@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personel Paneli</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="admin-page">
+
+    <header class="topbar">
+        <img
+            src="assets/logo-removebg-preview (1).png"
+            alt="BakımNet logosu"
+            class="site-logo"
+        >
+
+        <div class="user-info">
+            <span>Personel</span>
+            <button id="logoutButton">Çıkış Yap</button>
+        </div>
+    </header>
+
+    <main class="content personnel-content">
+        <h1>Sorun Bildir</h1>
+
+        <form id="problemForm" class="equipment-form">
+
+            <h2>Yeni Sorun Bildirimi</h2>
+
+            <input
+                type="number"
+                id="equipmentId"
+                placeholder="Ekipman ID"
+                required
+            >
+
+            <input
+                type="text"
+                id="title"
+                placeholder="Sorun başlığı"
+                required
+            >
+
+            <textarea
+                id="description"
+                placeholder="Sorunu açıklayın"
+                required
+            ></textarea>
+
+            <select id="priority">
+                <option value="Düşük">Düşük</option>
+                <option value="Orta" selected>Orta</option>
+                <option value="Yüksek">Yüksek</option>
+            </select>
+
+            <input type="file" id="photo" accept="image/jpeg,image/png,image/webp">
+
+            <button type="submit">
+                Sorun Bildir
+            </button>
+
+            <p id="problemMessage"></p>
+        </form>
+    </main>
+
+    <script src="js/personel.js"></script>
+</body>
+</html>

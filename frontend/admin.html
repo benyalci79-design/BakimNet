@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yönetici Paneli</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="admin-page">
+
+    <header class="topbar">
+        <img src="assets/logo-removebg-preview (1).png" alt="BakımNet logosu" class="site-logo">
+        <div class="user-info">
+            Yönetici
+            <button id="logoutButton">Çıkış Yap</button>
+        </div>
+    </header>
+
+    <div class="layout">
+        <aside id="adminNav" class="sidebar"></aside>
+
+        <main class="content">
+            <h1>Yönetici Paneli</h1>
+
+            <section class="dashboard-cards">
+                <div class="dashboard-card">
+                    <h3>Toplam Ekipman</h3>
+                    <p id="totalEquipment">-</p>
+                </div>
+
+                <div class="dashboard-card">
+                    <h3>Toplam İş Emri</h3>
+                    <p id="totalWorkOrders">-</p>
+                </div>
+
+                <div class="dashboard-card">
+                    <h3>Bekleyen İşler</h3>
+                    <p id="waitingWorkOrders">-</p>
+                </div>
+
+                <div class="dashboard-card">
+                    <h3>Müsait Teknisyen</h3>
+                    <p id="availableTechnicians">-</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/admin.js"></script>
+    <script src="js/admin-nav.js"></script>
+</body>
+</html>

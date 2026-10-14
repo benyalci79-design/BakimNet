@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stok ve Parçalar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="admin-page">
+    <header class="topbar">
+        <img src="assets/logo-removebg-preview (1).png" alt="BakımNet logosu" class="site-logo">
+        <div class="user-info"><span>Yönetici</span><button id="logoutButton">Çıkış Yap</button></div>
+    </header>
+    <div class="layout">
+        <aside id="adminNav" class="sidebar"></aside>
+        <main class="content">
+            <h1>Stok ve Parçalar</h1>
+            <form id="partForm" class="equipment-form">
+                <h2>Yeni Parça</h2>
+                <input id="partCode" placeholder="Parça kodu" required>
+                <input id="partName" placeholder="Parça adı" required>
+                <input id="stockQuantity" type="number" min="0" placeholder="Stok miktarı" required>
+                <input id="criticalLevel" type="number" min="0" placeholder="Kritik stok seviyesi" required>
+                <button type="submit">Parça Ekle</button>
+                <p id="partMessage"></p>
+            </form>
+            <section id="partList" class="equipment-list"></section>
+        </main>
+    </div>
+    <script src="js/admin-nav.js"></script>
+    <script src="js/spare-parts.js"></script>
+</body>
+</html>

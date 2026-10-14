@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İş Emirleri</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="admin-page">
+
+    <header class="topbar">
+        <img
+            src="assets/logo-removebg-preview (1).png"
+            alt="BakımNet logosu"
+            class="site-logo"
+        >
+
+        <div class="user-info">
+            <span>Yönetici</span>
+            <button id="logoutButton">Çıkış Yap</button>
+        </div>
+    </header>
+
+    <div class="layout">
+
+        <aside id="adminNav" class="sidebar"></aside>
+
+        <main class="content">
+            <h1>İş Emirleri</h1>
+
+            <form id="workOrderForm" class="equipment-form">
+                <h2>Yeni İş Emri Oluştur</h2>
+
+                <input
+                    type="number"
+                    id="equipmentId"
+                    placeholder="Ekipman ID"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="title"
+                    placeholder="İş başlığı"
+                    required
+                >
+
+                <textarea
+                    id="description"
+                    placeholder="Açıklama"
+                    required
+                ></textarea>
+
+                <select id="priority">
+                    <option value="Düşük">Düşük</option>
+                    <option value="Orta" selected>Orta</option>
+                    <option value="Yüksek">Yüksek</option>
+                </select>
+
+                <button type="submit">
+                    İş Emri Oluştur
+                </button>
+
+                <p id="workOrderMessage"></p>
+            </form>
+            <select id="priorityFilter">
+                <option value="Tümü">Tüm Öncelikler</option>
+                <option value="Düşük">Düşük</option>
+                <option value="Orta">Orta</option>
+                <option value="Yüksek">Yüksek</option>
+            </select>
+
+            <select id="statusFilter">
+                <option value="Tümü">Tüm İşler</option>
+                <option value="Bekliyor">Bekliyor</option>
+                <option value="Devam Ediyor">Devam Ediyor</option>
+                <option value="Tamamlandı">Tamamlandı</option>
+            </select>
+
+            <section
+                id="workOrderList"
+                class="equipment-list"
+            ></section>
+        </main>
+
+    </div>
+
+    <script src="js/admin-nav.js"></script>
+    <script src="js/work-orders.js"></script>
+
+</body>
+</html>

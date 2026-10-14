@@ -1,0 +1,17 @@
+/Include/
+/Lib/
+/Scripts/
+/pyvenv.cfg
+/.venv/
+/.venvSet-Location/
+__pycache__/
+*.py[cod]
+.env
+.pytest_cache/
+.env
+backups/
+__pycache__/
+.pytest_cache/
+docs/BAKIMNET_CONTEXT.md/bakimnet_ogrenme_ve_gelistirme_rehberi.docx
+*.docx
+/docs

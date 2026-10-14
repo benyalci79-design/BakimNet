@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorun Bildirimleri</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="admin-page">
+
+    <header class="topbar">
+        <img
+            src="assets/logo-removebg-preview (1).png"
+            alt="BakımNet logosu"
+            class="site-logo"
+        >
+
+        <div class="user-info">
+            <span>Yönetici</span>
+            <button id="logoutButton">Çıkış Yap</button>
+        </div>
+    </header>
+
+    <div class="layout">
+        <aside id="adminNav" class="sidebar"></aside>
+
+        <main class="content">
+            <h1>Sorun Bildirimleri</h1>
+
+            <section
+                id="problemList"
+                class="equipment-list"
+            ></section>
+        </main>
+    </div>
+    
+    <script src="js/admin-nav.js"></script>
+    <script src="js/problems.js"></script>
+</body>
+</html>
